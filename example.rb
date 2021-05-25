@@ -1,1 +1,5 @@
-puts (1..10).first(3)
+nums = 1...10
+
+p nums.first(5)
+
+p nums.last(1)
