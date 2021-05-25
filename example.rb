@@ -1,5 +1,10 @@
-channels = %w[CBS NBC FOX ESPN UPN]
+names = %w[James Patrick Matthew William Andrew Karris Chris]
 
-p channels.values_at(0)
-p channels.values_at(0, 2, 4)
-p channels.values_at(-1, -1, 2)
+p names[1]
+p names.slice(1)
+
+p names[4, 2]
+p names.slice(4, 2)
+
+p names[3..5]
+p names.slice(3..5)
