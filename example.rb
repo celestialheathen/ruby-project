@@ -1,5 +1,3 @@
-students = [ ["James", 38, true],
-              ["Max", 27, true],
-              ["Gabe", 31, false]]
+toys = ["Gundam", "Transformers", "Ninja Turtle"]
 
-puts students
+p toys.[](-1)
