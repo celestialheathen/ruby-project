@@ -1,2 +1,5 @@
+students = [ ["James", 38, true],
+              ["Max", 27, true],
+              ["Gabe", 31, false]]
 
-puts rand(1..10)
+puts students
