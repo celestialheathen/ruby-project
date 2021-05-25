@@ -1,5 +1,7 @@
-nums = 1...10
+nums = 1..50 
 
-p nums.first(5)
+alphabet = "a".."m"
 
-p nums.last(1)
+puts nums === 58
+
+puts alphabet === "c"
