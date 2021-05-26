@@ -1,10 +1,15 @@
-names = %w[James Patrick Matthew William Andrew Karris Chris]
+fruits = %w[Apple Orange Grape Banana]
+p fruits
 
-p names[1]
-p names.slice(1)
+fruits[4] = "Lemon"
+p fruits
 
-p names[4, 2]
-p names.slice(4, 2)
 
-p names[3..5]
-p names.slice(3..5)
+fruits[10] = "Kiwi"
+p fruits
+
+fruits[3, 2] = ["Lime", "Mango"]
+p fruits
+
+fruits[0..3] = ["Strawberry"]
+p fruits
