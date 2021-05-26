@@ -1,7 +1,3 @@
-locations = ["House", "Airport", "Bar"]
-p locations
-
-removed = locations.pop(4)
-p removed
-
-p locations
+p [1, 2].is_a?(Array)
+p [1, 2].is_a?(Object)
+p [1, 2].is_a?(BasicObject)
