@@ -1,14 +1,18 @@
-fact = "I am very handsome and intelligent."
+fact = "I am very handsome."
 
 
 
 def custom_index(string, substring) 
-  string.split("").each_with_index do |value, index|
-    if substring.include?(value)
-      return index  
-    end 
+  return nil unless string.include?(substring) 
+
+  length = substring.length
+  string.chars.each_with_index do |char, index|
+    sequence = string[index, length]
+    return index if sequence == substring
   end 
-  nil
 end 
 
-p custom_index(fact, "am")
+p custom_index(fact, "I")
+p custom_index(fact, "h")
+p custom_index(fact, "z")
+p custom_index(fact, "an")
