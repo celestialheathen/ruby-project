@@ -3,9 +3,7 @@ test = "An amazin aardvark appeared"
 def custom_count(string, search_characters)
   occurrance = 0
   string.each_char do |char|
-    search_characters.each_char do |c|
-      occurrance += 1 if char == c
-    end 
+    occurrance += 1 if search_characters.include?(char)
   end 
   occurrance
 end 
