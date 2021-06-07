@@ -1,6 +1,4 @@
-input = [0, 1, 2, 0, 0, 12]
-# Desired output [1, 2, 12, 0, 0, 0]
+nums = [1, 2, 3, 0, 0, 0]
+nums2 = [2, 5, 6]
 
-nonzeros, zeros = input.partition { |num| num != 0 }
-
-p nonzeros + zeros
+p result = (nums + nums2 - [0]).sort
