@@ -1,4 +1,4 @@
-sentence = "Once upon a time in a land far far away"
+sentence = "Once upon a time in a land far far far away"
 
 def word_count(string)
   words = string.split(" ")
