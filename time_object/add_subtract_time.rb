@@ -8,3 +8,4 @@ end
 
 p find_day_of_year(1)
 
+p find_day_of_year(25)
