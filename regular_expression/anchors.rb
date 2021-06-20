@@ -5,4 +5,4 @@ By the name of Annabel Lee;
 And this maiden she It lived with no other thought
 Than to love and be loved by me"
 
-p poem.scan(/me\z/)
+p poem.scan(/me\Z/)
