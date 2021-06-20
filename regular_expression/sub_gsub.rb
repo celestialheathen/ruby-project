@@ -1,3 +1,3 @@
-phrase = "hey there, I look forward to our appointment next week."
+phrase = "Hey there, I look forward to heY Our hey appointment next week."
 
-p phrase.sub(/\s/, "*")
+p phrase.scan(/hey/i)
