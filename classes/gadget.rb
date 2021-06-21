@@ -5,8 +5,8 @@ phone = Gadget.new
 laptop = Gadget.new
 microwave = Gadget.new
 
-# p phone
-# p laptop
-# p microwave
+surface = phone 
 
-puts phone.methods.sort
+p surface == phone 
+p surface.object_id 
+p phone.object_id
