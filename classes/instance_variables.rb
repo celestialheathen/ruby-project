@@ -6,7 +6,7 @@ class Gadget
   end 
 
   def to_s 
-    "Gadget #{@serial} belongs to the user #{@username}"
+    "Gadget #{@serial} belongs to the user #{@username}, it is made from #{self.class} and has ID of #{self.object_id}."
   end 
 
 end 
@@ -14,4 +14,6 @@ end
 phone = Gadget.new
 laptop = Gadget.new
 
+puts phone 
+puts laptop
 
