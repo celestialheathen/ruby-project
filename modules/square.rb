@@ -1,5 +1,5 @@
 module Square 
-  def self.area(size)
+  def area(size)
     size * size
   end 
 end 
