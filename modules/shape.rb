@@ -1,7 +1,7 @@
-require_relative "square"
+require_relative "circle"
 
-class Shape include Square 
+class Shape include Circle 
 end 
 
 s1 = Shape.new
-p s1.area(3)
+
