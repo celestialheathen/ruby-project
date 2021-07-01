@@ -11,14 +11,14 @@ class Car
     self.value > car.value ? "Your car is better!" : "Your car is worse!"
   end 
 
-  protected 
   def value 
     @value 
   end 
+
+  protected :value
 end 
 
 civic = Car.new(3, 30000)
 fiat = Car.new(1, 20000)
 
-# p civic.compare_car_with(fiat)
-p fiat.value
+p fiat.compare_car_with(civic)
