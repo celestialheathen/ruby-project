@@ -1,12 +1,25 @@
+require_relative 'app_store'
+
 class Gadget
 
   attr_accessor :username, :password 
-  attr_reader :production_number 
+  attr_reader :production_number, :apps 
 
   def initialize(username, password)
     @username = username
     @password = password
     @production_number = generate_production_num
+    @apps = []
+  end 
+
+  def install_app(name)
+    app = AppStore.find_app(name)
+    @apps << app unless @apps.include?(app)
+  end 
+
+  def delete_app(name)
+    app = @apps.find { |installed_app| installed_app.name == name }
+    apps.delete(app) unless app.nil?
   end 
 
   def to_s
@@ -37,10 +50,10 @@ class Gadget
 end 
 
 phone = Gadget.new("James", "mypass123")
-p phone.password
+p phone.apps 
 
-phone.password = "kitty"
-p phone.password
-
-phone.password = "newpass000"
-p phone.password
+phone.install_app(:Chat)
+phone.install_app(:Weather)
+phone.install_app(:Weather)
+phone.delete_app(:Chat)
+p phone.apps
