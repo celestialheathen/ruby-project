@@ -16,7 +16,8 @@ class Gadget
     #{self.object_id}."
   end 
 
-  private def generate_production_num
+
+  def generate_production_num
     start_digits = rand(10000..99999)
     end_digits = rand(10000.99999)
     alphabet = ("A".."Z").to_a
@@ -25,7 +26,8 @@ class Gadget
     "#{start_digits}-#{middle_digits}-#{end_digits}"
   end
 
+  private :generate_production_num
 end 
 
 phone = Gadget.new("James", "mypass")
-p phone.production_number
+p phone
