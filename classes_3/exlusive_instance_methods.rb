@@ -15,13 +15,19 @@ class Employee
 end 
 
 class Manager < Employee
+  def yell
+    "Who's the boss? #{name} is the boss here!"
+  end 
 end 
 
 class Worker < Employee
+  def clock_in(time)
+    "#{name} is clocking in at #{time}."
+  end 
 end 
 
 james = Manager.new("James", 38)
 dan = Worker.new("Dan", 24)
 
-p james.is_a?(Object)
-p james.instance_of?(Employee)
+p james.yell
+p dan.clock_in("7AM")
