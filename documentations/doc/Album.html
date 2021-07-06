@@ -88,6 +88,8 @@
 
   <section class="description">
     
+<p>An <a href="Album.html"><code>Album</code></a> class that stores an array of songs</p>
+
   </section>
 
   <section id="5Buntitled-5D" class="documentation-section">
@@ -106,7 +108,7 @@
         </div>
 
         <div class="method-description">
-        
+        <p>An array object of songs. Each song is a string.</p>
         </div>
       </div>
     </section>
@@ -125,10 +127,10 @@
         </div>
 
         <div class="method-description">
-          
+          <p>Creates a new <a href="Album.html"><code>Album</code></a> instance with an empty songs array.</p>
 
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File album.rb, line 6</span>
+            <pre><span class="ruby-comment"># File album.rb, line 10</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>
   <span class="ruby-ivar">@songs</span> = []
 <span class="ruby-keyword">end</span></pre>
@@ -153,10 +155,10 @@
         </div>
 
         <div class="method-description">
-          
+          <p>Add a song to the <a href="Album.html"><code>Album</code></a> object&#39;s song array.</p>
 
           <div class="method-source-code" id="add_song-source">
-            <pre><span class="ruby-comment"># File album.rb, line 10</span>
+            <pre><span class="ruby-comment"># File album.rb, line 15</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_song</span>(<span class="ruby-identifier">song</span>)
   <span class="ruby-ivar">@songs</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">song</span> 
 <span class="ruby-keyword">end</span></pre>
@@ -174,10 +176,10 @@
         </div>
 
         <div class="method-description">
-          
+          <p>Yield each song in the album to a block.</p>
 
           <div class="method-source-code" id="each-source">
-            <pre><span class="ruby-comment"># File album.rb, line 14</span>
+            <pre><span class="ruby-comment"># File album.rb, line 20</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">each</span> 
   <span class="ruby-identifier">songs</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">song</span><span class="ruby-operator">|</span>
     <span class="ruby-keyword">yield</span> <span class="ruby-identifier">song</span> 
